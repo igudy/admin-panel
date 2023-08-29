@@ -16,7 +16,7 @@ const Homepage = () => {
         <div className="py-7 pl-5 border-r-2 border-b-2 mr-3">
           <Sidebar />
         </div>
-        <div>
+        <div className="">
           <Navbar />
           <div>
             <Customers />
