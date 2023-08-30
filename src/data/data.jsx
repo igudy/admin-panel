@@ -55,12 +55,12 @@ export const topCustomers = [
     name: "Precious Isioma",
   },
   {
-    id: 1,
+    id: 3,
     initials: "T",
     name: "Tunda Olagunju",
   },
   {
-    id: 1,
+    id: 3,
     initials: "H",
     name: "Olamide Olagunju",
   },
@@ -68,30 +68,71 @@ export const topCustomers = [
 
 export const lineChartData = [
   {
-    time: "12am",
-    k: "1k",
-    category: "Personal_subscribers",
-    count: 4000,
+    name: "12am",
+    Personal_Subscribers: 4000,
+    Business_Subscribers: 2400,
+    amt: 2400,
   },
   {
-    time: "12am",
-    k: "1k",
-    category: "Business_subscribers",
-    count: 2400,
+    name: "2am",
+    Personal_Subscribers: 3000,
+    Business_Subscribers: 1398,
+    amt: 2210,
   },
   {
-    time: "3am",
-    k: "5k",
-    category: "Personal_subscribers",
-    count: 3000,
+    name: "4am",
+    Personal_Subscribers: 2000,
+    Business_Subscribers: 9800,
+    amt: 2290,
   },
   {
-    time: "3am",
-    k: "5k",
-    category: "Business_subscribers",
-    count: 1398,
+    name: "6am",
+    Personal_Subscribers: 2780,
+    Business_Subscribers: 3908,
+    amt: 2000,
   },
-  // Add more data points for other times and "k" values
+  {
+    name: "10am",
+    Personal_Subscribers: 1890,
+    Business_Subscribers: 4800,
+    amt: 2181,
+  },
+  {
+    name: "12am",
+    Personal_Subscribers: 2390,
+    Business_Subscribers: 3800,
+    amt: 2500,
+  },
+  {
+    name: "2pm",
+    Personal_Subscribers: 3490,
+    Business_Subscribers: 1300,
+    amt: 2800,
+  },
+  {
+    name: "4pm",
+    Personal_Subscribers: 3490,
+    Business_Subscribers: 5300,
+    amt: 5100,
+  },
+  {
+    name: "6pm",
+    Personal_Subscribers: 3490,
+    Business_Subscribers: 2400,
+    amt: 1100,
+  },
+  {
+    name: "8pm",
+    Personal_Subscribers: 3490,
+    Business_Subscribers: 9300,
+    amt: 9100,
+  },
+  {
+    name: "10pm",
+    Personal_Subscribers: 3490,
+    Business_Subscribers: 4100,
+    amt: 3700,
+  },
 ];
 
 export const genderData = [

@@ -7,11 +7,33 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
 } from "recharts";
 import { lineChartData } from "../data/data";
 
 const SubscriptionTrend = () => {
+  // Functional component for CustomizedLabel
+  const CustomizedLabel = ({ x, y, stroke, value }) => (
+    <text x={x} y={y} dy={-4} fill={stroke} fontSize={10} textAnchor="middle">
+      {value}
+    </text>
+  );
+
+  // Functional component for CustomizedAxisTick
+  const CustomizedAxisTick = ({ x, y, stroke, payload }) => (
+    <g transform={`translate(${x},${y})`}>
+      <text
+        x={0}
+        y={0}
+        dy={16}
+        textAnchor="end"
+        fill="#666"
+        transform="rotate(-35)"
+      >
+        {payload.value}
+      </text>
+    </g>
+  );
+
   return (
     <>
       <div className="flex flex-col rounded-lg border-2 p-3">
@@ -34,33 +56,34 @@ const SubscriptionTrend = () => {
 
         {/* Graph */}
         <div>
-          <h1>Responsive Container</h1>
-          {/* <ResponsiveContainer width="100%" height="100%">
-            <LineChart
-              width={20}
-              height={30}
-              data={lineChartData}
-              margin={{
-                top: 5,
-                right: 30,
-                left: 20,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="time" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Line
-                type="monotone"
-                dataKey="count"
-                stroke="#82ca9d" // Green color for Personal_subscribers
-                activeDot={{ r: 8 }}
-                name="Subscriber Count"
-              />
-            </LineChart>
-          </ResponsiveContainer> */}
+          <LineChart
+            width={800}
+            height={350}
+            data={lineChartData}
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 10,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" height={60} tick={<CustomizedAxisTick />} />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Line
+              type="monotone"
+              dataKey="Business_Subscribers"
+              stroke="#146614"
+              label={<CustomizedLabel />}
+            />
+            <Line
+              type="monotone"
+              dataKey="Personal_Subscribers"
+              stroke="#FBCBC9"
+            />
+          </LineChart>
         </div>
       </div>
     </>
