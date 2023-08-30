@@ -23,10 +23,10 @@ const Homepage = () => {
               <Customers />
             </div>
             {/* Flex */}
-            <div className="w-[100%]">
-              <div className="flex basis-1/2">
+            <div className="">
+              <div className="flex">
                 <SubscriptionTrend />
-                <div className="basis-1/2">
+                <div className="">
                   <Gender />
                   <TopCustomers />
                 </div>

@@ -66,36 +66,35 @@ export const topCustomers = [
   },
 ];
 
-// Line Chart
 export const lineChartData = [
   {
+    time: "12am",
     k: "1k",
-    Personal_subscribers: 4000,
-    Business_subscribers: 2400,
-    time: 12,
+    category: "Personal_subscribers",
+    count: 4000,
   },
   {
+    time: "12am",
+    k: "1k",
+    category: "Business_subscribers",
+    count: 2400,
+  },
+  {
+    time: "3am",
     k: "5k",
-    Personal_subscribers: 3000,
-    Business_subscribers: 1398,
-    time: 3,
+    category: "Personal_subscribers",
+    count: 3000,
   },
   {
-    k: "10k",
-    Personal_subscribers: 2000,
-    Business_subscribers: 9800,
-    time: 3,
+    time: "3am",
+    k: "5k",
+    category: "Business_subscribers",
+    count: 1398,
   },
-  {
-    k: "15k",
-    Personal_subscribers: 2780,
-    Business_subscribers: 3908,
-    time: 9,
-  },
-  {
-    k: "20k",
-    Personal_subscribers: 1890,
-    Business_subscribers: 4800,
-    time: 12,
-  },
+  // Add more data points for other times and "k" values
+];
+
+export const genderData = [
+  { name: "Male", value: 400 },
+  { name: "Female", value: 300 },
 ];

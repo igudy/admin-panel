@@ -14,23 +14,27 @@ import { lineChartData } from "../data/data";
 const SubscriptionTrend = () => {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col rounded-lg border-2 p-3">
         <div className="flex">
-          <div className="flex">
-            <p>Subscription</p>
-            <p>4th August 2023</p>
+          <div className="flex gap-7">
+            <p className="font-bold mt-4">Subscription Trend</p>
+            <div className="border-2 p-2 mt-1 rounded-xl">
+              <p className="text-gray-500">4th August 2023</p>
+            </div>
           </div>
-          <div className="flex">
-            <p>Today</p>
-            <p>Week</p>
-            <p>Month</p>
-            <p>Custom</p>
+          <div className="flex ml-[7rem] mr-4 bg-[#F1F2F6] px-2 py-2 rounded-xl gap-7">
+            <p className="bg-white px-5 py-1 rounded-xl">
+              <span className="text-[#6B6C7E]">Today</span>
+            </p>
+            <p className="mt-1">Week</p>
+            <p className="mt-1">Month</p>
+            <p className="mt-1">Custom</p>
           </div>
         </div>
 
         {/* Graph */}
         <div>
-          Hello{" "}
+          <h1>Responsive Container</h1>
           {/* <ResponsiveContainer width="100%" height="100%">
             <LineChart
               width={20}
@@ -44,17 +48,17 @@ const SubscriptionTrend = () => {
               }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
+              <XAxis dataKey="time" />
               <YAxis />
               <Tooltip />
               <Legend />
               <Line
                 type="monotone"
-                dataKey="pv"
-                stroke="#8884d8"
+                dataKey="count"
+                stroke="#82ca9d" // Green color for Personal_subscribers
                 activeDot={{ r: 8 }}
+                name="Subscriber Count"
               />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
             </LineChart>
           </ResponsiveContainer> */}
         </div>
