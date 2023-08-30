@@ -16,10 +16,12 @@ const Homepage = () => {
         <div className="py-7 pl-5 border-r-2 border-b-2 mr-3">
           <Sidebar />
         </div>
-        <div className="">
+        <div>
           <Navbar />
           <div>
-            <Customers />
+            <div className="border-t-2 mt-4">
+              <Customers />
+            </div>
             {/* Flex */}
             <div className="flex">
               <SubscriptionTrend />
