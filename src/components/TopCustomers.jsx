@@ -3,7 +3,7 @@ import { topCustomers } from "../data/data";
 
 const TopCustomers = () => {
   return (
-    <div className="border-2 rounded-lg ml-20 p-5 mt-3">
+    <div className="border-2 rounded-lg ml-10 p-5 mt-3">
       <p>Top Customers This Week</p>
       <div>
         {topCustomers.map((topCustomer) => (

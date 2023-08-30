@@ -8,7 +8,7 @@ export const COLORS = ["#146614", "#FBCBC9"];
 
 const Gender = () => {
   return (
-    <div className="border-2 rounded-lg ml-20 p-5">
+    <div className="border-2 rounded-lg ml-10 p-5">
       <div className="font-[600]">Gender Distribution</div>
       <PieChart width={200} height={150}>
         <Pie

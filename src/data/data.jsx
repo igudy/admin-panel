@@ -4,6 +4,7 @@ import User3 from "../assets/user3.png";
 import ArrowUp from "../assets/arrowUp.png";
 import ArrowDown from "../assets/arrowDown.png";
 
+// Customers
 export const customers = [
   {
     id: 1,
@@ -43,6 +44,7 @@ export const customers = [
   },
 ];
 
+// Top Customers
 export const topCustomers = [
   {
     id: 1,
@@ -66,6 +68,7 @@ export const topCustomers = [
   },
 ];
 
+// Line chart data
 export const lineChartData = [
   {
     name: "12am",
@@ -135,6 +138,7 @@ export const lineChartData = [
   },
 ];
 
+// Gender data
 export const genderData = [
   { name: "Male", value: 400 },
   { name: "Female", value: 300 },

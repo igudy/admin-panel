@@ -13,7 +13,7 @@ const Homepage = () => {
     <>
       {/* Flex */}
       <div className="flex font-montserrat">
-        <div className="py-7 pl-5 border-r-2 border-b-2 mr-3">
+        <div className="py-7 pl-5 mr-3">
           <Sidebar />
         </div>
         <div>
@@ -33,7 +33,7 @@ const Homepage = () => {
               </div>
             </div>
             {/* Geographical Distribution - Flex */}
-            <div className="flex">
+            <div className="flex mb-10">
               <GeographicalDistribution />
               <TopStates />
             </div>
