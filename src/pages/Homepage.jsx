@@ -23,11 +23,13 @@ const Homepage = () => {
               <Customers />
             </div>
             {/* Flex */}
-            <div className="flex">
-              <SubscriptionTrend />
-              <div>
-                <Gender />
-                <TopCustomers />
+            <div className="w-[100%]">
+              <div className="flex basis-1/2">
+                <SubscriptionTrend />
+                <div className="basis-1/2">
+                  <Gender />
+                  <TopCustomers />
+                </div>
               </div>
             </div>
             {/* Geographical Distribution - Flex */}
