@@ -6,9 +6,9 @@ import Logout from "../assets/logout.png";
 const Sidebar = () => {
   return (
     <div className="flex flex-col mr-14">
-      <div className="border-r-2 border-b-2">
+      <div className="">
         <div className="text-3xl font-semibold">
-          <p className="text-[#146614] px-10">Valubah</p>
+          <p className="text-[#146614] px-10 pt-6 pb-3">Valubah</p>
         </div>
         <div className="mt-5 px-5 py-1 bg-[#E0FFE0] rounded-lg flex">
           <img
