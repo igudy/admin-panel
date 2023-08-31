@@ -12,7 +12,10 @@ const SkillBar = ({ skill, user }) => {
 
   return (
     <div className="flex flex-col mb-4">
-      <div className="font-bold">{skill}</div>
+      <div className="flex gap-5">
+        <div>{skill}</div>
+        <div className=" text-gray-500">{user}</div>
+      </div>
       <div className="w-[26vh] h-2 bg-gray-300 rounded-full overflow-hidden">
         <div
           className={`h-full ${bgColorClass}`}

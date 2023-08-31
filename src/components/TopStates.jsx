@@ -5,7 +5,7 @@ const TopStates = () => {
   return (
     <div>
       <div className="border-2 rounded-lg ml-10 p-5 mt-3">
-        <p>Top States</p>
+        <p className="font-bold">Top States</p>
         <SkillBar skill="Lagos" user={80} />
         <SkillBar skill="Rivers" user={70} />
         <SkillBar skill="Ogun" user={40} />
