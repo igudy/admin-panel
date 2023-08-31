@@ -31,11 +31,11 @@ const Gender = () => {
       <div className="ml-8">
         <div className="flex gap-7 mt-[-20px] justify-center">
           <div className="text-[#146614] flex">
-            <img src={Male} alt="male" className=" h-6 w-2 mr-1" />
+            <img src={Male} alt="male" className=" h-5 w-2 mr-1" />
             Male
           </div>
           <div className="text-[#FBCBC9] flex ">
-            <img src={Female} alt="female" className="h-6 w-2 mr-1" />
+            <img src={Female} alt="female" className="h-5 w-2 mr-1" />
             Female
           </div>
         </div>

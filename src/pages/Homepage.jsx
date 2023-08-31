@@ -27,7 +27,7 @@ const Homepage = () => {
 
         <div>
           <Navbar />
-          <div className="bg-gray-200 mt-2 ml-[-.9rem] h-[2px] w-[85vw]"></div>
+          <div className="bg-gray-200 mt-2 ml-[-0.9rem] h-[2px] w-[80vw]"></div>
 
           <div>
             <div className="mt-4">

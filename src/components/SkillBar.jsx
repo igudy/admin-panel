@@ -12,7 +12,7 @@ const SkillBar = ({ skill, user }) => {
 
   return (
     <div className="flex flex-col mb-4">
-      <div className="flex gap-5">
+      <div className="flex flex-between`">
         <div>{skill}</div>
         <div className=" text-gray-500">{user}</div>
       </div>
