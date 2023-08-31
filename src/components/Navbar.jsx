@@ -5,9 +5,9 @@ import Dropdown from "../assets/dropdown.png";
 const Navbar = () => {
   return (
     <div className="">
-      <div className="flex mt-5">
+      <div className="flex mt-5 justify-between gap-24">
         <div className="font-semibold text-xl">Dashboard</div>
-        <div className="flex absolute right-0 gap-4 mx-16">
+        <div className="flex justify-between gap-4 mx-16">
           <img
             className="h-[24px] w-[24px]"
             src={Notification}
